@@ -145,6 +145,10 @@ public class MazeGenerator implements Traversable
         return friends;
     }
 
+	public int getSize() {
+		return matrixSize;
+	}
+
 	
     // could return whatever kind of variable-length container
     public ArrayList<Pair> getNeighbors( Pair coord, Range rowrange, Range colrange ) {

@@ -244,7 +244,12 @@ public class MazeMatrixInt implements Traversable {
         }
         return ret;
     } // neighbors
-	
+	/**
+	 * Size of 1 side of the maze
+	 */
+	public int getSize() {
+		return height;
+	}
     /**
      * Manages pretty colors using a TreeMap
      */
