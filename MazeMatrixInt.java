@@ -198,7 +198,12 @@ public class MazeMatrixInt implements Traversable {
      * for colorful mode
      */
     public int get( Pair coord ) { 
-        return matrix[ coord.getX() ][ coord.getY() ];
+        if(!inBounds(coord))
+		{
+			return 0;
+		}
+		return matrix[ coord.getX() ][ coord.getY() ];
+		
     } //get
 
     // could return whatever kind of variable-length container
